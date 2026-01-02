@@ -1,0 +1,13 @@
+{
+  "name": "webai",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm run dev --prefix be & npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix be",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "install:all": "npm install && cd be && npm install && cd ../frontend && npm install"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1"
+  }
+}
